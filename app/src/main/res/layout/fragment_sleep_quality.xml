@@ -133,7 +133,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:ems="10"
-            android:hint="@string/information"
+            android:hint="@string/informationEditText"
             android:inputType="textPersonName"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
