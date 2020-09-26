@@ -1,0 +1,22 @@
+Q1.
+  封裝是將實現某個功能的要素包裝在一起 ,即若要在使用該功能不用在重寫一次內部的結構, 只需套入參   數 呼叫該class即可
+  好處:
+  1.可讓程式碼更容易理解、維護
+  2.增強程式碼的安全性 (除非提供特定接口, 否則無法變動裡面的屬性)
+Q2.
+  enum是一種數據類型, 可將類型相同的物件整理起來 ,增加可讀性
+Q3.
+  //宣告enum類
+  enum class Cookies(val money: Int){
+      PotatoChips(30),
+      Chocolate(20)
+  }
+  fun main(args: Array<String>) {
+      //列印巧克力的價格
+      println(Cookies.Chocolate.money)
+  }
+Q4.
+  RelativeLayout是相對布局,是透過元件之間的相對位置排放
+  LinearLayout是線性佈局 ,可指定元件要以水平或者是垂直的方式排列
+Q5.
+  ConstrainLayout是約束布局 ,透過物件自已本身與其它物件之間的約束來決定它的位置,可以完全替代其  他佈局，降低頁面佈局層級(不會再包著一層層的layout),有效簡化xml裡的程式碼,且可使用拉鍊子的方式讓物件在空間裡平均分布、對齊
