@@ -76,6 +76,12 @@ class SleepQualityFragment : Fragment() {
                 sleepQualityViewModel.doneNavigating()
             }
         })
+        sleepQualityViewModel.getinformation.observe(viewLifecycleOwner, Observer {
+            if(it ==true){
+                sleepQualityViewModel.information= binding.editTextTextPersonName.text.toString()
+            }
+        })
+
 
         return binding.root
     }
